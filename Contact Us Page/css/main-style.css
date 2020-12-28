@@ -1,0 +1,588 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'gotham-medium';
+  src: url("../fonts/gotham-medium.woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'gotham-book';
+  src: url("../fonts/gotham-book.woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-bold';
+  src: url("../fonts/gotham-bold.woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham-light';
+  src: url("../fonts/gotham-light.woff");
+  font-style: normal;
+}
+
+body {
+  font-family: gotham-medium, gotham-book, gotham-bold, gotham-light, 'arial','sans-serif';
+}
+
+body, html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  font-family: gotham-medium;
+  font-size: 14;
+  font-size: 0.875rem;
+  -webkit-box-shadow: 0px 0px 9px -4px #111;
+          box-shadow: 0px 0px 9px -4px #111;
+  position: relative;
+  overflow: hidden;
+}
+
+header .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+header .change .bar2 {
+  opacity: 0;
+}
+
+header .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+header nav .navbar-brand {
+  padding: 0 0 17px 15px;
+}
+
+header nav .pharma-logo {
+  width: 157px;
+}
+
+header nav .icons {
+  padding: 0 15px 17px 0;
+}
+
+header nav .search-icon {
+  width: 25px;
+  vertical-align: baseline;
+}
+
+header nav .navbar-toggler {
+  border: none;
+  padding: 0 6px;
+}
+
+header nav .navbar-toggler .bar1, header nav .navbar-toggler .bar2, header nav .navbar-toggler .bar3 {
+  width: 26px;
+  height: 2px;
+  background-color: #36b4e5;
+  margin: 6px 0;
+}
+
+header .main-header {
+  padding: 40px 30px 10px;
+  background: #323641;
+  z-index: 2;
+}
+
+header .main-header .nav-item .nav-link {
+  padding: 8px 0 20px;
+  color: #fff;
+  font-size: 14;
+  font-size: 0.875rem;
+}
+
+header .main-header .nav-item .nav-link:after {
+  font-family: "FontAwesome";
+  content: "\f105";
+  position: absolute;
+  right: 30px;
+  font-size: 18;
+  font-size: 1.125rem;
+}
+
+header .main-header .nav-item .lifecycle {
+  padding-top: 30px;
+}
+
+header .main-header .nav-item .line {
+  width: 90%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  background: #fff;
+}
+
+header .second-header {
+  padding: 20px 30px 10px;
+  background: #46b9e3;
+  background-image: url(../images/content-images/header-design.png);
+  background-size: 100%;
+  background-position: right 19px bottom;
+  background-repeat: no-repeat;
+}
+
+header .second-header .nav-item .nav-link {
+  color: #fff;
+}
+
+@media screen and (min-width: 540px) {
+  header .second-header {
+    background-size: 60%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  header .second-header {
+    background-size: 48%;
+    z-index: 1;
+  }
+  header .navbar-collapse {
+    margin: 0 -24px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header nav {
+    padding: 0 !important;
+  }
+  header nav .navbar-brand {
+    padding: 0;
+  }
+  header nav .pharma-logo {
+    width: 175px;
+  }
+  header nav .icons {
+    padding: 0;
+    display: none;
+  }
+  header .navbar-collapse {
+    margin: 0 0 0 100px;
+  }
+  header .main-header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0;
+    background: none;
+  }
+  header .main-header .line {
+    display: none;
+  }
+  header .main-header .nav-item .nav-link {
+    color: #323540;
+    padding: 8px 26px;
+    padding: 15px 20px;
+  }
+  header .main-header .nav-item .nav-link:after {
+    content: none;
+  }
+  header .second-header {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-image: none;
+    padding: 0;
+  }
+  header .second-header:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    top: 0;
+    left: 300px;
+    z-index: -1;
+    background: #46b9e3;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: skew(30deg, 0deg);
+    transform: skew(30deg, 0deg);
+  }
+  header .second-header .nav-item .nav-link {
+    padding: 8px 10px;
+    font-size: 12;
+    font-size: 0.75rem;
+  }
+  header .second-header .nav-item .blog {
+    color: #ed1a58;
+    background: #eff1f3;
+    padding: 10px;
+  }
+  header .second-header .nav-item .globe {
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header .second-header:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 38%;
+    top: 0;
+    left: 314px;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  header .second-header:before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 39%;
+    top: 0;
+    left: 460px;
+  }
+}
+
+.banner {
+  background-color: #313540;
+  color: #fff;
+  overflow: hidden;
+  padding: 40px 6px;
+}
+
+.banner h1 {
+  font-size: 24;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    padding: 60px 15px;
+  }
+  .banner .contact-banner:after {
+    background-image: url(../images/content-images/contact-banner-design.png);
+    content: "";
+    left: 100%;
+    top: -68px;
+    position: absolute;
+    height: 200px;
+    width: 120%;
+    background-size: 15%;
+    background-repeat: no-repeat;
+  }
+}
+
+.newsletter {
+  font-family: gotham-book;
+  padding: 30px 6px 20px 6px;
+  font-size: 16;
+  font-size: 1rem;
+  background: #eaeaec;
+  color: #313540;
+  padding: 30px 0 20px 0;
+}
+
+.newsletter h3 {
+  font-family: gotham-medium;
+  font-size: 20;
+  font-size: 1.25rem;
+}
+
+.newsletter .letter {
+  border-bottom: 1px solid #c4c5c9;
+  padding-bottom: 20px;
+  font-family: gotham-medium;
+  font-size: 20;
+  font-size: 1.25rem;
+}
+
+.newsletter .newsletter-form {
+  padding-top: 30px;
+}
+
+.newsletter .newsletter-form i {
+  font-size: 11;
+  font-size: 0.6875rem;
+}
+
+.newsletter .newsletter-form .signup-form {
+  padding: 10px 0;
+}
+
+.newsletter .newsletter-form .signup-form .label {
+  margin: 0;
+  font-size: 12;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.newsletter .newsletter-form .signup-form .field {
+  margin: 8px 0;
+}
+
+.newsletter .newsletter-form .signup-form input {
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 3px -2px;
+          box-shadow: 0px 0px 3px -2px;
+}
+
+.newsletter .newsletter-form .signup-form select {
+  border-radius: 0;
+  -webkit-box-shadow: 0px 0px 3px -2px;
+          box-shadow: 0px 0px 3px -2px;
+}
+
+.newsletter .newsletter-form .term {
+  font-size: 12;
+  font-size: 0.75rem;
+}
+
+.newsletter .newsletter-form .term a {
+  color: #46b9e3;
+  text-decoration: underline;
+}
+
+.newsletter .newsletter-form .checkbox {
+  height: 25px;
+  width: 25px;
+  margin: 0 10px 0 0;
+  -webkit-box-shadow: 0px 3px 3px -2px !important;
+          box-shadow: 0px 3px 3px -2px !important;
+}
+
+.newsletter .newsletter-form .chcekbox-label {
+  position: relative;
+  top: -8px;
+}
+
+.newsletter .newsletter-form .submit-btn {
+  background: #ed1a58;
+  color: #fff;
+  width: 160px;
+  height: 45px;
+  border: none;
+  border-radius: 0;
+  margin: 20px 0 0 0;
+}
+
+.newsletter .blue-rectangle {
+  width: 60%;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+.newsletter .email-icon {
+  width: 40%;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .newsletter {
+    padding: 60px 0 30px;
+  }
+  .newsletter .letter {
+    border-bottom: none;
+  }
+  .newsletter .newsletter-form {
+    padding: 0 0 0 40px;
+  }
+}
+
+.global-locations {
+  padding: 40px 6px 20px 6px;
+  background: #ecf8fc;
+}
+
+.global-locations h3 {
+  font-family: gotham-bold;
+  font-size: 30;
+  font-size: 1.875rem;
+}
+
+.global-locations ul {
+  border-bottom: 1px solid #c4c5c9;
+  padding-bottom: 40px;
+}
+
+.global-locations ul li {
+  font-family: gotham-book;
+  font-size: 16;
+  font-size: 1rem;
+  list-style: none;
+  margin: 20px 0 0 0;
+  text-decoration: underline;
+}
+
+.global-locations a {
+  font-family: gotham-book;
+  color: #235789;
+}
+
+.global-locations .map {
+  margin: 10px 0 20px;
+}
+
+.global-locations .map img {
+  width: 64%;
+}
+
+.global-locations .locations {
+  padding: 30px 6px 20px 6px;
+}
+
+.global-locations .location {
+  margin-top: 20px;
+}
+
+.global-locations .location h4 {
+  font-family: gotham-bold;
+  font-size: 20px;
+  font-size: 1.25pxrem;
+}
+
+.global-locations .location p {
+  font-family: gotham-book;
+  margin: 0;
+}
+
+.global-locations .location .contact-no {
+  margin: 6px 0;
+}
+
+.global-locations .europe {
+  background: #fff;
+}
+
+@media screen and (min-width: 540px) {
+  .global-locations img {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .global-locations {
+    padding: 60px 0 20px;
+  }
+  .global-locations .locations {
+    padding: 60px 0;
+  }
+  .global-locations .map img {
+    width: 80%;
+  }
+  .global-locations ul {
+    padding-bottom: 0;
+  }
+  .global-locations ul li {
+    display: inline-block;
+    margin: 0 30px 40px 0;
+  }
+}
+
+.contact-email {
+  background: #46b9e3;
+  color: #fff;
+}
+
+footer {
+  background: #313540;
+  color: #fff;
+  font-family: gotham-book;
+}
+
+footer .footer-links {
+  padding: 60px 0;
+  padding: 40px 8px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer ul li {
+  font-family: gotham-light;
+  list-style: none;
+  font-size: 13;
+  font-size: 0.8125rem;
+}
+
+footer h4 {
+  font-family: gotham-bold;
+  font-size: 16;
+  font-size: 1rem;
+}
+
+footer .mrg-b-20 {
+  margin-bottom: 20px;
+}
+
+footer .propharma-footer-logo {
+  width: 200px;
+}
+
+footer .propharma-group img {
+  width: 17px;
+}
+
+footer .propharma-group .career-btn {
+  font-family: gotham-bold;
+  background: #46b9e3;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 8px 26px 9px;
+}
+
+footer .social-media {
+  margin: 30px 0 20px;
+}
+
+footer .social-media img {
+  margin: 10px;
+}
+
+footer .social-media .linkedin {
+  width: 20px;
+}
+
+footer .social-media .twitter {
+  width: 22px;
+}
+
+footer .copyrights {
+  margin: 10px 0;
+  font-size: 13;
+  font-size: 0.8125rem;
+}
+
+footer .copyrights p:first-child {
+  margin-bottom: 5px;
+}
+
+footer .copyrights p:nth-child(2) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    background-image: url(../images/content-images/footer-design.png);
+    background-position: right 74px top;
+    background-repeat: no-repeat;
+    background-size: 14%;
+  }
+  footer .footer-links {
+    padding: 60px 0;
+  }
+  footer .social-media {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=main-style.css.map */

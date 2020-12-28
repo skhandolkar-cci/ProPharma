@@ -1,0 +1,88 @@
+.newsletter {
+    font-family: gotham-book;
+    padding: 30px 6px 20px 6px;
+    @include fontSize(16);
+    background: $gray-bg;
+    color: $footer-bg;
+    padding: 30px 0 20px 0;
+    h3 {
+        font-family: gotham-medium;
+        @include fontSize(20);
+    }
+    .letter {
+        border-bottom: 1px solid $line-color;
+        padding-bottom: 20px;
+        font-family: gotham-medium;
+        @include fontSize(20);
+    }
+    .newsletter-form {
+        padding-top: 30px;
+        i {
+            @include fontSize(11);
+        }
+        .signup-form {
+            padding: 10px 0;
+            .label {
+                margin: 0;
+                @include fontSize(12);
+                font-weight: 700;
+            }
+            .field {
+                margin: 8px 0;
+            }
+            input {
+                border-radius: 0;
+                box-shadow: 0px 0px 3px -2px;
+            }
+            select {
+                border-radius: 0;
+                box-shadow: 0px 0px 3px -2px;
+            }
+        }
+        .term {
+            @include fontSize(12);
+            a {
+                color: $sky-blue-bg;
+                text-decoration: underline ;
+            }
+        }
+        .checkbox {
+            height: 25px;
+            width: 25px;
+            margin: 0 10px 0 0;
+            box-shadow: 0px 3px 3px -2px !important;
+        }
+        .chcekbox-label {
+            position: relative;
+            top: -8px;
+        }
+        .submit-btn {
+            background: $highlight-color;
+            color: $secondary-color;
+            width: 160px;
+            height: 45px;
+            border: none;
+            border-radius: 0;
+            margin: 20px 0 0 0;
+        }
+    }
+    .blue-rectangle {
+        width: 60%;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+    .email-icon {
+        width: 40%;
+        position: relative;
+    }
+    @media screen and (min-width: 992px) {
+        padding: 60px 0 30px;
+        .letter {
+            border-bottom: none;
+        }
+        .newsletter-form {
+            padding: 0 0 0 40px;
+        }
+    }
+}

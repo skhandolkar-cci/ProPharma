@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+
+@font-face {
+  font-family: 'gotham-medium';
+  src: url('../fonts/gotham-medium.woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'gotham-book';
+  src: url('../fonts/gotham-book.woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('../fonts/gotham-bold.woff');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gotham-light';
+  src: url('../fonts/gotham-light.woff');
+  font-style: normal;
+}
+body {
+  font-family: gotham-medium, gotham-book, gotham-bold, gotham-light, 'arial','sans-serif';
+}
+body,html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propharma Blogs</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main-style.css">
+    <script src="./js/main-script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0 pt-3 pt-lg-0">
+            <div class="container">
+                <a class="navbar-brand" href="javascript:void(0)"><img class="pharma-logo" src="./images/content-images/logo.png" alt="propharma-logo-logo"></a>
+                <div class="icons">
+                    <img class="search-icon" src="./images/content-images/search-icon.png" alt="search-icon">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"  onclick="closeIconToggle(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </button>
+                </div>
+                <div class="collapse row navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 order-lg-last justify-content-end-lg main-header">
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">Regulatory Affairs</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">Life Science Consulting</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">Pharmacovigilance</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="javascript:void(0)" role="button" aria-haspopup="true" aria-expanded="false">Medical Information</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <div class="line"></div>
+                            <a class="nav-link lifecycle d-lg-none" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Product Lifecycle Storages</a>
+                        </li>
+                        <li class="nav-item my-auto d-none d-lg-block">
+                            <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false"><img class="search-icon" src="./images/content-images/black-search-icon.png" alt="search-icon"></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav w-100 order-lg-first justify-content-end-lg second-header">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link blog" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img class="globe d-none d-lg-block " src="./images/content-images/globe.png" alt="globe"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-lg-block" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">German</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-lg-block" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Japanese</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="banner">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-9 contact-banner">
+                    <h1>
+                        <span class="d-block">Your buisness has complex challenges.</span>
+                        <span class="d-block">ProPharma Group has exceptional solutions.</span>
+                   </h1>
+              </div>
+            </div>
+        </div>
+    </main>
+    <section class="newsletter">
+        <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                    <div class="d-block letter">
+                        <p>We partner with biotechnology, pharmaceutical, and medical device clients by providing experienced and global solutions for medical information, regulatory strategies, pharmacovigilance, and consulting services.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 newsletter-form">
+                      <p>Complete this form or contact us directly at one of our nine global office locations.</p>
+                      <i>All fields are required</i>
+                      <form class="signup-form">
+                        <div class="form-row">
+                          <div class="col-lg-6 field">
+                              <label class="label">FIRST NAME</label>
+                            <input type="text" class="form-control">
+                          </div>
+                          <div class="col-lg-6 field">
+                            <label class="label">LAST NAME</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col field">
+                                <label class="label">EMAIL ADDRESS</label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-lg-7 field">
+                                <label class="label">COUNTRY</label>
+                              <select class="form-control">
+                              </select>
+                            </div>
+                            <div class="col-lg-5 field">
+                                <label class="label">STATE</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                      </form>
+                  </div>
+                  <div class="col-lg-3 text-right d-none d-lg-block">
+                      <img src="./images/content-images/blue-rectangle.png" class="blue-rectangle" alt="blue-rectangle">
+                    <img src="./images/content-images/email-icon.png" class="email-icon" alt="email-icon">
+                  </div>
+              </div>
+        </div>
+    </section>
+    <section class="global-locations">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Our Global Footprint</h3>
+                </div>
+                <div class="col-lg-8 pl-lg-5">
+                    <ul>
+                        <li><a href="#north-america" class="nav-scroll" onclick="navScroll(this)">North America</a></li>
+                        <li><a href="#europe" class="nav-scroll" onclick="navScroll(this)">Europe</a></li>
+                        <li><a href="#asia-pacific" class="nav-scroll" onclick="navScroll(this)">Asia Pacific</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="north-america" class="unites-states locations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 map text-center">
+                        <img src="./images/content-images/na-map.png" alt="na-map">
+                    </div>
+                    <div class="col-lg-8 pl-lg-5">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>United States</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <address>
+                                    <h4>St. Paul</h4>
+                                    <p>2635 University Ave W Suite 195</p>
+                                    <p>St. Paul, MN 55114</p>
+                                    <p class="contact-no">1-888-242-0559</p>
+                                    <a href="javascript:void(0)"><u>Get Directions</u></a>
+                                </address>
+                            </div>
+                            <div class="col-md-6 location">
+                                <address>
+                                    <h4>St. Louis</h4>
+                                    <p>13801 Riverport Dr, Suite 500</p>
+                                    <p>Maryland Heights, MO 63043</p>
+                                    <p class="contact-no">1-888-242-0559</p>
+                                    <a href="javascript:void(0)"><u>Get Directions</u></a>
+                                </address>
+                            </div>
+                            <div class="col-md-6 location">
+                                <address>
+                                    <h4>Kansas City</h4>
+                                    <p>8717 W. 110th St, Suite 300</p>
+                                    <p>Overland Park, KS 66210</p>
+                                    <p class="contact-no">1-888-242-0559</p>
+                                    <a href="javascript:void(0)"><u>Get Directions</u></a>
+                                </address>
+                            </div>
+                            <div class="col-md-6 location">
+                                <address>
+                                    <h4>Washington</h4>
+                                    <p>1129 20th ST NW, Suite 600</p>
+                                    <p>Washington, DC 20036</p>
+                                    <p class="contact-no">1-202-833-8077</p>
+                                    <a href="javascript:void(0)"><u>Get Directions</u></a>
+                                </address>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Philadelphia</h4>
+                                <p>501 W. Office Center Dr, Suite 350</p>
+                                <p>Fort Washington, PA 19034</p>
+                                <p class="contact-no">1-888-242-0559</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Bozeman</h4>
+                                <p>274 Discovery Dr, Suite 100</p>
+                                <p>Bozeman, MT 59718</p>
+                                <p class="contact-no">1-888-242-0559</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm-12">
+                                <h2>Canada</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Windsor</h4>
+                                <p>3000 Temple Dr., Suite 200</p>
+                                <p>Windsor, ON N8W 5J6</p>
+                                <p class="contact-no">1-519-252-9555</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="europe" class="europe locations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 map text-center">
+                        <img src="./images/content-images/eu-map.png" alt="europe map">
+                    </div>
+                    <div class="col-lg-8 pl-lg-5">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>United Kingdom</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>North Yorkshire</h4>
+                                <p>Olliver, Aske, Richmond</p>
+                                <p>North Yorkshire, DL10 5HX</p>
+                                <p class="contact-no">1-519-252-9555</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Buckinghamshire</h4>
+                                <p>31-33 Chalfont Road, Seer Green,</p>
+                                <p>Nr Beaconsfield</p>
+                                <p>Buckinghamshire, HP9 2QP</p>
+                                <p class="contact-no">+44 (0)1494 490790</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div> 
+                        <div class="row mt-5">
+                            <div class="col-sm-12">
+                                <h2>The Netherlands</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>The Netherlands</h4>
+                                <p>Schipholweg 73 – 75</p>
+                                <p>2316 ZL Leiden</p>
+                                <p class="contact-no">+31 (0)71 52440 00</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Amsterdam</h4>
+                                <p>Gustav Mahlerplein 2</p>
+                                <p>Amsterdam, 1082 MA</p>
+                                <p class="contact-no">+31 (0)20 799 7405</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div> 
+                        <div class="row mt-5">
+                            <div class="col-sm-12">
+                                <h2>Sweden</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Malmö</h4>
+                                <p>Medeon Science Park</p>
+                                <p>SE - 205 12 Malmö</p>
+                                <p class="contact-no">+46 (0) 8 21 5445</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Stockholm</h4>
+                                <p>Fleminggatan 18</p>
+                                <p>SE -112 26 Stockholm</p>
+                                <p class="contact-no">+46 (0)8 21 5445</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div> 
+                        <div class="row mt-5">
+                            <div class="col-sm-12">
+                                <h2>Germany</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Berlin</h4>
+                                <p>Siemensdamm 62</p>
+                                <p>13627 Berlin</p>
+                                <p class="contact-no">+49 (0)30 85606878 - 0</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="asia-pacific" class="asia-pacific locations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 map text-center">
+                        <img src="./images/content-images/as-map.png" alt="europe map">
+                    </div>
+                    <div class="col-lg-8 pl-lg-5">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2>Australia</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Hawthorn</h4>
+                                <p>Unit 5, Level 2, 40 Burwood Rd</p>
+                                <p>Hawthorn VIC 3122</p>
+                                <p class="contact-no">+61 3 8814 7900</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div> 
+                        <div class="row mt-5">
+                            <div class="col-sm-12">
+                                <h2>Japan</h2>
+                            </div>
+                            <div class="col-md-6 location">
+                                <h4>Tokyo</h4>
+                                <p>Link Square Shinjuku, 5-27-5, Sendagaya,</p>
+                                <p>Shibuya-Ku, Tokyo Japan 151-0051</p>
+                                <p class="contact-no">+81-3-6277-4041</p>
+                                <a href="javascript:void(0)"><u>Get Directions</u></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-email text-center p-4">
+        <p class="text-center mt-2 my-auto">For email inquiries please contact us at: Info@ProPharmaGroup.com</p>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer-links">
+                <div class="col-md-6 col-lg-2 order-md-2 mrg-b-20">
+                        <h4 class="mb-10">LIFECYCLE STAGE</h4>
+                        <ul>
+                            <li><a href="javascript:void(0)">Development</a></li>
+                            <li><a href="javascript:void(0)">Clinical</a></li>
+                            <li><a href="javascript:void(0)">Commercial</a></li>
+                        </ul>            
+                </div>
+                <div class="col-md-6 col-lg-2 order-md-3 mrg-b-20">
+                    <h4 class="mb-10">CORE SERVICES</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)">Life Science Consulting</a></li>
+                        <li><a href="javascript:void(0)">Medical Information</a></li>
+                        <li><a href="javascript:void(0)">Pharmacovigilance</a></li>
+                        <li><a href="javascript:void(0)">Regulatory Affairs</a></li>
+                    </ul>            
+                </div>
+                <div class="col-md-6 col-lg-4 order-md-4 mrg-b-20 propharma-group">
+                    <h4 class="mb-10">PROPHARMA GROUP</h4>
+                    <ul>
+                        <li><a href="javascript:void(0)">About Us</a></li>
+                        <li><a href="javascript:void(0)">Events</a></li>
+                        <li><a href="javascript:void(0)">News &amp; Blog</a></li>
+                        <li><a href="javascript:void(0)">Privacy Notice</a></li>
+                        <li><a href="javascript:void(0)">Contact Us</a></li>
+                        <li><a href="javascript:void(0)">Website Terms</a></li>
+                        <li><a href="javascript:void(0)">Gender Pay Gap Report: 2018</a></li>
+                    </ul>              
+                    <button class="btn btn-default career-btn">
+                        <img src="./images/content-images/users-icon.png" class="user-icon" alt="users-icon">
+                        Careers</button>
+                </div>
+                <div class="col-12 order-md-5 social-media">
+                    <img src="./images/content-images/linkedin-icon.png" class="linkedin" alt="linkedin-icon">
+                    <img src="./images/content-images/twitter-icon.png" class="twitter" alt="twitter-icon">
+                </div>
+                <div class="col-md-6 col-lg-4 order-md-1 mrg-b-20">
+                    <img src="./images/content-images/propharma-footer-logo.png" class="propharma-footer-logo" alt="propharma-footer-logo">
+                </div>
+                <div class="col-12 order-md-6 copyrights">
+                    <p>Copyright © 2020. All rights reserved.</p>
+                    <p>Olliver, Aske, Richmond, North Yorkshire, DL10 5HX, UK ProPharma Group MIS Limited,</p>
+                    <p>Reg No: 03671574, Registered in England and Wales.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+

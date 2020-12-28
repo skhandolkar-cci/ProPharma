@@ -1,0 +1,25 @@
+.banner {
+    background-color: $footer-bg;
+    color: $secondary-color;
+    overflow: hidden;
+    padding: 40px 6px;
+    h1 {
+        @include fontSize(24);
+    }
+    @media screen and (min-width: 992px) {
+            padding: 60px 15px; 
+            .contact-banner {
+                &:after {
+                    background-image: url(../images/content-images/contact-banner-design.png);
+                    content: "";
+                    left: 100%;
+                    top: -68px;
+                    position: absolute;
+                    height: 200px;
+                    width: 120%;
+                    background-size: 15%;
+                    background-repeat: no-repeat;
+                }
+            }
+    }
+}
